@@ -1,0 +1,689 @@
+.section-1 {
+    display: flex;
+    text-align: left;
+    width: 25%;
+    margin-left: 5%;
+}
+
+/* Левая часть первого блока (Текст "Хит лета...") */
+.promo-section-1 {
+    padding: 5%;
+    margin-top: 5vw;
+}
+.promo-section-2 {
+    padding: 5%;
+    margin: 0;
+}
+.promo-label {
+    color: rgba(255, 255, 255, 0.594);
+    font-size: clamp(15px,3.5vw,30px);
+    margin: 0;
+}
+.promo-title {
+    color: white;
+    margin: 0;
+    font-size: clamp(20px,4vw,80px) ;
+    font-weight: bolder;
+}
+.highlight {
+    color: #00643c;
+    font-size: clamp(30px,4vw,80px) ;
+    margin: 0;
+    font-weight: bolder;
+}
+.promo-subtitle {
+    color: white;
+    font-size: clamp(20px,3.5vw,30px) ;
+    margin-top: 40px;
+}
+.ingredients {
+    color: rgba(255, 255, 255, 0.594);
+    margin: 0;
+    font-size: clamp(15px,2vw,20px) ;
+}
+.promo-price{
+    color: rgb(218, 218, 85);
+    font-weight: 500;
+    font-size: clamp(20px,3.5vw,30px) ;
+}
+.promo-amount{
+    color: #00643c;
+    font-size: clamp(30px,4.5vw,40px) ;
+    font-weight: 900;
+}
+.menu-button {
+    background-color: white;
+    color: #027447;
+    border-radius: 30px;
+    border: 0;
+    font-weight: bolder;
+    width: clamp(200px,25vw,300px);
+    font-size: clamp(15px,1.5vw,20px) ;
+    height: clamp(50px,5vw,60px);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.menu-button:hover {
+    color: white;
+    background-color: #027447;
+}
+/* Правая часть первого блока с фоткой смузи и тд... */
+.smoothie-block {
+    background-color: #027447;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: clamp(200px,80vw,600px);
+    height: clamp(400px,60vw,800px);
+    margin-top: 40px;
+    margin-left: 90%;
+    border-radius: 5vw;
+}
+.smoothie {
+    width: clamp(300px,50vw,800px);
+    right: clamp(30px,10vw,250px);
+    position: absolute;
+    filter: drop-shadow(15px 15px 20px rgba(0, 0, 0, 0.779));
+}
+.smoothie-text-1 {
+    color: white;
+    transform: rotate(270deg);
+    font-size: clamp(40px,10vw,140px) ;
+    font-weight: 900;
+}
+.smoothie-text-2 {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
+    transform: rotate(270deg);
+    font-size: clamp(40px,10vw,140px) ;
+    font-weight: 900;
+    margin-left: 42%;
+    filter: drop-shadow(0px 10px 3px black);
+}
+.smoothie-text {
+    margin-top: 20%;
+    margin-right: 15%;
+}
+
+/* Клубника */
+.strawberry1 {
+    position: absolute;
+    width: 35%;
+    transform: rotate(130deg);
+    top: -50px;
+    right: 5%;
+    filter: drop-shadow(15px 15px 20px rgba(0, 0, 0, 0.779));
+}
+.strawberry2 {
+    position: absolute;
+    width: 25%;
+    right: clamp(150px,50vw,800px);
+    transform: rotate(230deg);
+    filter: drop-shadow(-20px 10px 15px rgba(0, 0, 0, 0.779));
+}
+.strawberry3 {
+    position: absolute;
+    width: 30%;
+    top: clamp(300px,45vw,650px);
+    transform: rotate(280deg);
+    right: clamp(50px,30vw,450px);
+    filter: drop-shadow(10px -10px 15px rgba(0, 0, 0, 0.748));
+    z-index: 1;
+}
+.strawberry4 {
+    position: absolute;
+    width: 20%;
+    top: clamp(380px,55vw,730px);
+    transform: rotate(220deg);
+    right: 60%;
+    filter: blur(3px);
+    filter: drop-shadow(0px -25px 15px rgba(0, 0, 0, 0.813));
+}
+.strawberry5 {
+    position: absolute;
+    width: 20%;    
+    top: clamp(300px,45vw,530px);
+    right: -5%;
+    transform: rotate(300deg);
+    filter: blur(1px);
+    filter: drop-shadow(-20px -20px 15px rgba(0, 0, 0, 0.484));
+}
+.mint {
+    position: absolute;
+    width: 50%;
+    top: clamp(350px, 50vw, 680px);
+    left: clamp(100px, 20vw, 300px);
+}
+
+/* Меню */
+.section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}   
+
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 5%;
+    width: 90%;
+    position: relative;
+}
+.menu_button {
+    border: 0;
+    background-color: #00643c;
+    color: #ffffff;
+    width: clamp(110px,25vw,450px);
+    height: clamp(50px,5vw,75px);
+    font-size: clamp(10px,1.5vw,20px) ;
+    border-radius: 15px 0 clamp(20px,3vw,50px) 0;
+    position: absolute;
+    left: 5%;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.492) );
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: 500;
+}
+.b1 {
+    left: 2%;
+    z-index: 4;
+}
+.b2 {
+    left: 25%;
+    z-index: 3;
+}
+.b3 {
+    left: 48%;
+    z-index: 2;
+}
+.b4 {
+    z-index: 1;
+    left: 71%;
+}
+.b1:hover {
+    transform: scale(1.15);
+    background-color: rgb(218, 218, 218);
+    color: #027447;
+    z-index: 10;
+}
+.b2:hover {
+    transform: scale(1.15);
+    background-color: rgb(218, 218, 218);
+    color: #027447;
+    z-index: 10;
+}
+.b3:hover {
+    transform: scale(1.15);
+    background-color: rgb(218, 218, 218);
+    color: #027447;
+    z-index: 10;
+}
+.b4:hover {
+    transform: scale(1.15);
+    background-color: rgb(218, 218, 218);
+    color: #027447;
+    z-index: 10;
+}
+
+/* drinks-item */
+.drinks{
+    margin-top: clamp(150px,20vw,300px);
+    display: flex;
+    gap: 3rem;
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.drinks-item {
+    background-color: #ffffff;
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.246) -50%, #d4d4d4 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%23000000' fill-opacity='0.1' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: clamp(250px,25vw,350px);
+    position: relative;
+    filter: drop-shadow(15px 15px 20px rgba(0, 0, 0, 0.79));
+    margin-bottom: 10vw;
+    transition: 0.3s;
+}
+.drinks-name {
+    margin-top: clamp(180px,20vw,220px);
+    font-weight: 1000;
+    font-size: clamp(20px,2vw,30px);
+}
+.drinks-ingredients {
+
+}
+.drinks-price {
+    color: #00643c;
+    font-size: clamp(15px,1.5vw,25px);
+    font-weight: 900;
+    margin-top: -10%;
+}
+.drinks-description-1,
+.drinks-description-2,
+.drinks-description-3 {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    gap: 70px;
+    font-size: clamp(12px, 1.5vw, 15px);
+}
+.drinks-button {
+    border: 0;
+    border-radius: 50px;
+    background-color: #00643c;
+    color: white;
+    width: clamp(130px,20vw,170px);
+    height: clamp(35px,5vw,40px);
+    font-size: clamp(10px, 1.5vw, 15px);
+    margin-bottom: -10%;
+    transition: 0.4s;
+    cursor: pointer;
+    filter: drop-shadow(15px 15px 10px rgba(0, 0, 0, 0.79));
+}
+.drinks-button:hover {
+    background-color: white;
+    color: #027447;
+    transform: scale(1.1);
+}
+
+.drinks-button:hover ~ .drinks-item,
+.drinks-item:hover {
+    transform: scale(1.1);
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.246) -50%, #027447 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%23000000' fill-opacity='0.1' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'/%3E%3C/svg%3E");
+    .drinks-description-1, .drinks-description-2, .drinks-description-3 {
+        color: white;
+    }
+    .drinks-name {
+        color: white;
+    }
+    .desc-other {
+        color: #000000; text-decoration: underline;
+    }   
+}
+.desc-other {
+    color: #027447; text-decoration: underline;
+}
+.drinks-image {
+    max-width: clamp(250px,30vw,400px);
+    position: absolute;
+    bottom: 55%;
+    filter: drop-shadow(15px 15px 20px rgba(0, 0, 0, 0.617));
+}
+
+/* Most popular */
+.section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    padding: 5%;
+    position: relative;
+}
+.most-container {
+
+}
+.most-text-1 {
+    font-size: 1.6vw;
+    color: rgb(99, 99, 99);
+}
+.most-text-2 {
+    font-size: 8vw;
+    color: rgb(94, 94, 201);
+    font-weight: 900;
+    line-height: 0.8;
+    z-index: 10;
+    text-shadow: 
+            -1px -1px 0 white,
+            1px -1px 0 white,
+            -1px  1px 0 white,
+            1px  1px 0 white;
+    margin-top: -2.5%;
+    filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.642));
+}
+.most-image {
+    margin-top: -35%;
+    z-index: -10;
+    filter: drop-shadow(0px 0px 40px rgb(0, 0, 0));
+    width: 35vw;
+}
+.most-desc-1 {
+    color: white;
+    margin-bottom: 40%;
+    text-align: left;
+    font-size: 0.8vw;
+}
+.most-desc-2 {
+    color: white;
+    margin-top: 5%;
+    text-align: right;
+    font-size: 0.8vw;
+}
+.most-line {
+    background: radial-gradient(circle, rgb(154, 231, 163)  0%, rgb(69, 141, 77) 100%);
+    position: absolute;
+    width: 110%;
+    transform: rotate(-5deg);
+    bottom: 16%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    color: white;
+    gap: 100px;
+    box-shadow: 1px -5px 15px rgba(0, 0, 0, 0.621);
+}
+.most-font {
+    font-family: 'Great Vibes', cursive;
+}
+.coffee_bean{
+    position: absolute;
+    width: 13%;
+    right: 22%;
+    top: 5%;
+    transform: rotate(50deg);
+    filter: blur(2px);
+    filter: drop-shadow(35px 15px 15px rgba(0, 0, 0, 0.62));
+}
+.coffee_bean1{
+    z-index: 1;
+    position: absolute;
+    width: 10%;
+    left: 25%;
+    bottom: 18%;
+    transform: rotate(-50deg);
+    filter: blur(5px);
+    filter: drop-shadow(-35px 15px 15px rgba(0, 0, 0, 0.691));
+}
+.arrow1 {
+    position: absolute;
+    width: 10%;
+    filter: brightness(0) invert(1);
+    left: 15%;
+    top: 25%;
+    transform: rotate(150deg);
+}
+.arrow2 {
+    position: absolute;
+    width: 10%;
+    filter: brightness(0) invert(1);
+    right: 30%;
+    bottom: 30%;
+    transform: rotate(20deg);
+}
+/* СПОТЫ */
+.section-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.spots-mountain {
+    position: absolute;
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    width: 100vw;
+    top: 0;
+}
+.spots-h1 {
+    font-weight: 1000;
+    z-index: 1;
+    filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+    color: rgba(255, 255, 255, 0.203);
+    font-size: clamp(30px,10vw,200px);
+    -webkit-text-stroke: 3px white; /* толщина и цвет обводки */
+    text-stroke: 1px white; /* для некоторых браузеров */
+}
+.spots-container {
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    width: 35%;
+    margin: auto;
+    filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.642));
+}
+.spots-container:hover {
+    transform: scale(1.1);
+    .spots-image-container {
+        background-color: #027447;
+    }
+    .spots-image {
+        border: 2px solid white;
+    }
+}
+.spots-container img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+.spots-image {
+    width: 100%;
+    border-radius: 25px;
+}
+.spots-image-container {
+    z-index: 1;
+    max-width: 60%;
+    background-color: rgb(174, 174, 174);
+    border: 3px solid white;
+    padding: 7%;
+    border-radius: 25px;
+}
+.spots-h2 {
+    color: rgb(191, 191, 191);
+    font-size: clamp(10px,1.2vw,35px);
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+.spots-description {
+    color: #027447;
+    font-size: clamp(8px,0.7vw,20px);
+    margin: 0;
+}
+.spots {
+    display: flex;
+    width: 80%;
+}
+
+/* footer */
+.section-5 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.footer-logo {
+    margin: auto;
+    width: 7%;
+    margin-top: 10%;
+    filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.545));
+}
+.footer-text {
+    color: white;
+    font-size: clamp(10px,2vw,25px);
+    font-weight: 100;
+}
+.footer-button {
+    background-color: #027447;
+    color: white;
+    border: 0;
+    border-radius: 1.1vw;
+    width: clamp(110px,10vw,180px);
+    height: clamp(35px,4vw,60px);
+    margin: auto;
+    font-size: clamp(8px,1vw,15px);
+    font-weight: 500;
+    margin-top: 4%;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.507));
+    cursor: pointer;
+    transition: 0.2s;
+}
+.footer-button:hover {
+    transform: scale(1.05);
+    background-color: white;
+    color: #027447;
+}
+.footer {
+    background-color: #027447;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    border-radius: 5vw 5vw 0 0;
+    margin-top: 4%;
+    padding: 4%;
+    
+    font-size: clamp(10px,2vw,18px);
+}
+.footer-left {
+    text-align: left;
+    color: rgb(51, 51, 51);
+}
+.footer-right {
+    color: rgb(51, 51, 51);
+    text-align: left;
+    position: relative;
+}
+.label-input {
+    width: clamp(70px,15vw,220px);
+    height: clamp(30px,4vw,50px);
+    border: 0;
+    border-radius: 0.8vw;
+    color: rgb(99, 99, 99);
+    padding-left: 10%;
+    font-size: clamp(10px,1vw,15px);
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.507));
+}
+.label-send-button {
+    height: clamp(30px,4vw,50px);
+    width: clamp(30px,4vw,50px);
+    border: 0;
+    border-radius: 0.8vw;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    background-color: white;
+    font-size: clamp(10px,1vw,15px);
+    margin-left: 1%;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.507));
+    color: #027447;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.label-send-button:hover {
+    background-color: #10ae6f;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* signature */
+.signature {
+    background-color: #ffffff;
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.246) -50%, #d4d4d4 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%23000000' fill-opacity='0.1' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    border-radius: 25px;
+    width: 10%;
+    width: clamp(100px,20vw,300px);
+    height: clamp(80px,15vw,200px);
+    text-align: left;
+    padding: 2vw;
+    font-size: clamp(10px,1.5vw,35px);
+    position: absolute;
+    top: clamp(100px,15vw,350px);
+    left: 6%;
+    filter: drop-shadow(15px 15px 15px rgb(0, 0, 0));
+}
+.footer-arrow {
+    position: absolute;
+    width: 10%;
+    filter: brightness(0) invert(1);
+    left: 20%;
+    transform: rotate(200deg);
+    top: 13%;
+}
+.footer-bean1{
+    width: 15%;
+    top: 25%;
+    right: 2%;
+    position: absolute;
+    z-index: 10;
+    filter: drop-shadow(15px 15px 15px rgb(0, 0, 0));
+    transform: rotate(120deg);
+    filter: blur(3px);
+}
+.footer-bean2{
+    width: 12%;
+    top: 15%;
+    left: 2%;
+    position: absolute;
+    z-index: 10;
+    filter: drop-shadow(15px 15px 15px rgb(0, 0, 0));
+    transform: rotate(50deg);
+}
+.surf-board {
+    position: absolute;
+    z-index: -11;
+    width: 40vw;
+    bottom: clamp(180px,25vw,200px);
+    right: -5vw;
+    filter: drop-shadow(15px 15px 15px rgb(0, 0, 0));
+}
+
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+.scroll-animate.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #027447; /* твой зелёный */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.3s ease;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1.05);
+}

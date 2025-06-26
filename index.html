@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurfCoffee</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <img class="logo" src="./img/logo.png" alt="" srcset="">
+    <nav class="navigation">
+        <button onclick="scrollToSection('home')" class="navigation-button">Главная</button>
+        <button onclick="scrollToSection('menu')" class="navigation-button">Меню</button>
+        <button onclick="scrollToSection('about')" class="navigation-button">О нас</button>
+    </nav>
+    <section id="home" class="section-1">
+        <div class="promo-section-1">
+            <div>
+                <p class="promo-label fade-in">ХИТ ЛЕТА ВО ВСЕМ МИРЕ</p>
+                <h1 class="promo-title fade-in">ПОРТУГАЛЬСКИЙ <br><span class="highlight">СМУЗИ <span style="color: white;">!</span></span></h1>
+                <h2 class="promo-subtitle fade-in">ОСВЕЖАЮЩИЙ И ПИТАТЕЛЬНЫЙ</h2>
+                <p class="ingredients fade-in">ФИРМЕННЫЙ МИКС ИЗ НАТУРАЛЬНЫХ ЯГОД: <br>
+                ВИШНИ И КЛУБНИКИ, ЕЖИВИКИ И СЛАДКОГО <br> БАНАНА</p>    
+                </div>
+                <p class="promo-price fade-in">Лучшая цена <span class="promo-amount">450 ₽</span></p>
+                <button class="menu-button fade-in">СМОТРЕТЬ МЕНЮ</button>
+            </div>
+            <div class="smoothie-block">
+                    <img class="strawberry1" src="./img/strawberry.png" alt="">
+                    <img class="strawberry2" src="./img/strawberry.png" alt="">
+                    <img class="strawberry3" src="./img/strawberry.png" alt="">
+                    <img class="strawberry4" src="./img/strawberry.png" alt="">
+                    <img class="strawberry5" src="./img/strawberry.png" alt="">
+                    <img class="mint" src="./img/mint.png" alt="" srcset="">
+
+                    <img class="smoothie fade-in" src="./img/smoothie.png" alt="" srcset="">
+                    <div class="smoothie-text">
+                        <p class="smoothie-text-1">СМУЗИ</p>
+                        <p class="smoothie-text-2">СМУЗИ</p>
+                    </div>
+            </div>
+    </section>
+
+    <section id="menu" class="section-2 scroll-animate">
+        <div class="menu-buttons">
+            <button class="menu_button b1">НАПИТКИ</button>
+            <button class="menu_button b2">ДЕСЕРТЫ</button>
+            <button class="menu_button b3">ВЫПЕЧКА</button>
+            <button class="menu_button b4">ТОСТЫ</button>
+        </div>
+        
+        <div class="drinks">
+
+            <div class="drinks-item">
+                <img class="drinks-image" src="./img/double-hawaiian.png" alt="">
+                <p class="drinks-name"> ДВОЙНОЙ<br>ГАВАЙСКИЙ </p>
+                <div class="drinks-ingredients">
+                    <div class="drinks-description-1">
+                        <p>МОЛОКО</p> <p class="desc-other">КОКОСОВОЕ</p>
+                    </div>
+                    <div class="drinks-description-2">
+                        <p>КОФЕИН</p> <p class="desc-other">105g</p>
+                    </div>
+                    <div class="drinks-description-3">
+                        <p>ЦЕНА</p> <p class="desc-other">440 ₽</p>
+                    </div>
+                    <button class="drinks-button">ДОБАВИТЬ</button>
+                </div>
+            </div>
+
+            <div class="drinks-item">
+                <img class="drinks-image" src="./img/iced-latte.png" alt="">
+                <p class="drinks-name">АЙС-ЛАТТЕ</p>
+                <div class="drinks-ingredients">
+                    <div class="drinks-description-1">
+                        <p>МОЛОКО</p> <p class="desc-other">МИНДАЛЬНОЕ</p>
+                    </div>
+                    <div class="drinks-description-2">
+                        <p>КОФЕИН</p> <p class="desc-other">95g</p>
+                    </div>
+                    <div class="drinks-description-3">
+                        <p>ЦЕНА</p> <p class="desc-other">300 ₽</p>
+                    </div>
+                    <button class="drinks-button">ДОБАВИТЬ</button>
+                </div>
+            </div>
+
+            <div class="drinks-item">
+                <img class="drinks-image" src="./img/Matcha Latte.png" alt="">
+                <p class="drinks-name"> МАТЧА ЛАТТЕ</p>
+                <div class="drinks-ingredients">
+                    <div class="drinks-description-1">
+                        <p>МОЛОКО</p> <p class="desc-other">РАСТИТЕЛЬНОЕ</p>
+                    </div>
+                    <div class="drinks-description-2">
+                        <p>КОФЕИН</p> <p class="desc-other">90g</p>
+                    </div>
+                    <div class="drinks-description-3">
+                        <p>ЦЕНА</p> <p class="desc-other">350 ₽</p>
+                    </div>
+                    <button class="drinks-button">ДОБАВИТЬ</button>
+                </div>
+            </div>
+
+            <div class="drinks-item">
+                <img class="drinks-image" src="./img/Flat white.png" alt="">
+                <p class="drinks-name"> ФЛЭТ-УАЙТ </p>
+                <div class="drinks-ingredients">
+                    <div class="drinks-description-1">
+                        <p>МОЛОКО</p> <p class="desc-other">СОЕВОЕ</p>
+                    </div>
+                    <div class="drinks-description-2">
+                        <p>КОФЕИН</p> <p class="desc-other">100g</p>
+                    </div>
+                    <div class="drinks-description-3">
+                        <p>ЦЕНА</p> <p class="desc-other">390 ₽</p>
+                    </div>
+                    <button class="drinks-button">ДОБАВИТЬ</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="desserts">
+
+        </div>
+        <div class="bakery">
+
+        </div>
+        <div class="Toasts">
+
+        </div>
+    </section>
+
+    <section id="about" class="section-3 scroll-animate">
+        <p class="most-desc-1">Surf Coffee — это не просто сеть кофеен, а целая философия, вдохновлённая культурой 
+            серфинга и свободного образа жизни. Каждое пространство бренда оформлено так, 
+            чтобы переносить гостей в атмосферу пляжей, солнечных дорог и тёплых закатов. 
+            Музыка, декор, стиль общения персонала — всё работает на то, чтобы человек почувствовал: 
+            здесь можно выдохнуть, расслабиться и просто быть собой.</p>
+        <div class="most-container">
+            <p class="most-text-1">КОФЕЙНЫЙ БРЕНД В МИРЕ</p>
+            <h1 class="most-text-2"> <span style="color: white;">MOST</span><br> POPULAR</h1>
+            <img class="most-image" src="./img/double-hawaiian.png" alt="" srcset="">
+        </div>   
+            <img class="coffee_bean" src="./img/coffee bean.png" alt="">
+            <img class="coffee_bean1" src="./img/coffee bean.png" alt="">
+            <img class="arrow1" src="./img/arrow1.png" alt="">
+            <img class="arrow2" src="./img/arrow2.png" alt="">
+        <div class="most-line"> 
+            <p class="most-font">SurfCoffee</p> 
+            <p class="most-font">SurfCoffee</p> 
+            <p class="most-font">SurfCoffee</p> 
+            <p class="most-font">SurfCoffee</p>
+            <p class="most-font">SurfCoffee</p>
+            <p class="most-font">SurfCoffee</p>
+            <p class="most-font">SurfCoffee</p>
+            <p class="most-font">SurfCoffee</p> </div>
+        <p class="most-desc-2">Особое внимание Surf Coffee уделяет качеству и оригинальности напитков. 
+            Кофейные зерна проходят собственную обжарку, а рецепты регулярно обновляются и 
+            дополняются новыми идеями. В меню можно найти не только классику, но и нестандартные 
+            авторские сочетания — кокосовый латте, матча-тоники, фирменные рафы и сезонные лимонады. 
+            Каждый напиток создаётся с акцентом на вкус и эмоции, которые он вызывает.</p>
+    </section>
+
+    <section class="section-4 scroll-animate">
+        <img class="spots-mountain radius" src="./img/mountains.png" alt="">
+        <h1 class="spots-h1">СПОТЫ</h1>
+        <div class="spots">
+            <div class="spots-container">
+                <div class="spots-image-container">
+                    <img class="spots-image" src="./img/spot1.jpg" alt="">
+                </div>
+                
+                <h2 class="spots-h2">SURF COFFEE® x <br>ARBAT</h2>
+                <p class="spots-description">Москва, <br> Новый Арбат 7а1</p>
+            </div>
+            <div class="spots-container">
+                <div class="spots-image-container">
+                    <img class="spots-image" src="./img/spot2.jpg" alt="">
+                </div>
+                <h2 class="spots-h2">SURF COFFEE® x <br>DREAM</h2>
+                <p class="spots-description">Москва <br>Новослободская 16а</p>
+            </div>
+            <div class="spots-container">
+                <div class="spots-image-container">
+                    <img class="spots-image" src="./img/spot3.jpg" alt="">
+                </div>
+                <h2 class="spots-h2">SURF COFFEE® x <br>HSTA</h2>
+                <p class="spots-description">Сочи <br>Платановая 31-15</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-5 scroll-animate">
+        <img class="footer-logo" src="./img/logo.png" alt="">
+        <p class="footer-text">Surf Coffee® - это не просто <br>
+                кофейни. Это место встречи и <br>
+                знакомств, объеденяющее <br>
+                единомышленников</p>
+
+                <img class="footer-arrow" src="./img/arrow2.png" alt="">
+        <div class="signature">
+            <p>АВТОР ПРОЕКТА</p>
+            <p style="color: #027447; font-weight: 1000;">ГУРОВ <br>
+            ВЛАДИСЛАВ <br>
+            ВЛАДИМИРОВИЧ</p>
+        </div>
+        <button onclick="scrollToSection('home')" class="footer-button">НА ГЛАВНУЮ</button>
+
+        <div class="footer">
+            <img class="footer-bean1" src="./img/coffee bean.png" alt="" srcset="">
+            <img class="footer-bean2" src="./img/coffee bean.png" alt="" srcset="">
+            <div class="footer-left">
+                <p style="color: white;">ЛИЦЕНЗИЯ СЕРФЕРА</p>
+                <p style="color: white;">КОФЕЙНИ</p>
+                <p style="color: white;">ТРУДОУСТРОЙСТВО</p>
+                <p>© 2025 Surf Coffee® Company
+                ООО «Стратфорд Глобал». Все права защищены. <br>
+                Политика в отношении обработки персональных данных <br>
+                Пользовательское соглашение <br>
+                Программа лояльности Surf Coffee®</p>
+            </div>
+
+            <div class="footer-right">
+                <img class="surf-board" src="./img/surf-board.png" alt="" srcset="">
+                <p style="color: rgb(209, 209, 209);">РАССЫЛКА</p>
+                <div>
+                    <input class="label-input" type="text" value="Email">
+                    <button class="label-send-button">></button>
+                </div>
+                <p>Указывая свои данные я соглашаюсь<br>
+                    на условия обработки персональных <br>
+                    данных и использования сайта в <br>
+                    соответствии с Пользовательским <br>
+                    соглашением</p>
+            </div>
+
+        </div>
+    </section>
+    <script>
+
+    const elements = document.querySelectorAll('.scroll-animate');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+        }
+        });
+    }, {
+        threshold: 0.2
+    });
+    elements.forEach(el => observer.observe(el));
+
+    function scrollToSection(id) {
+    const section = document.getElementById(id);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+    }
+
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        scrollToTopBtn.classList.add('show');
+    } else {
+        scrollToTopBtn.classList.remove('show');
+    }
+    });
+
+    scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+    });
+</script>
+</body>
+</html>
