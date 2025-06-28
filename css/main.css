@@ -1,5 +1,6 @@
 * {
     font-family: 'Montserrat', sans-serif;
+
 }
 
 body {
@@ -8,6 +9,10 @@ body {
     box-sizing: border-box;
     background-color: #0c2529;
     overflow-x: hidden;
+    
+}
+body::-webkit-scrollbar {
+  display: none; 
 }
 .logo {
     width: clamp(50px,3vw,80px);
@@ -43,4 +48,172 @@ body {
     border-radius: 20px;
     color: #fff;
 }
+
+
+
+@media (max-width: 640px) { 
+    .section-1 {
+        display: none;
+    }
+    .mobile-section-1 {
+        display: flex;
+    }
+    .logo {
+        display: none;
+    }
+    .menu_button {
+        width: clamp(90px,20vw,450px);
+    }
+
+}
+/* Блок который открывается только на телефоне */
+.mobile-section-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.mob-disc-1 {
+    color: rgb(166, 166, 166);
+    font-size: 5vw;
+    margin-top: 5%;
+}
+.mob-dic2 {
+    color: #027447;
+    font-size: 8vw;
+    font-weight: 1000;
+    margin: 0;
+}
+.mob-img {
+    position: absolute;
+    bottom: 65%;
+    filter: drop-shadow(15px 15px 20px rgba(0, 0, 0, 0.779));
+
+}
+.mob-buttons-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #027447;
+    height: 15rem;
+    border-radius: 30px;
+    margin: auto;
+    width: 95%;
+    margin-top: 3%;
+}
+.mob-back-text1,.mob-back-text2,.mob-back-text3 {
+    color: white;
+    font-size: 20vw;
+    font-weight: 1000;
+    margin: 0;
+    line-height: 1;
+}
+.mob-back-text2 {
+    filter: opacity(0.5);
+    color: #0c2529;
+    filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
+}
+.mob-back-text3 {
+    filter: opacity(0.5);
+    color: #0c2529;
+    filter: drop-shadow(0px 0px 1px rgba(255, 255, 255, 0.321));
+}
+.mob-button {
+    border: 0;
+    background-color: white;
+    color: #027447;
+    border-radius: 30px;
+    width: 50vw;
+    height: 13vw;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.581));
+    transition: 0.3s;
+}
+.mob-button:hover {
+    transform: scale(1.05);
+    background-color: #027447;
+    color: white;
+}
+.most-line {
+    gap: 20px;
+    width: 95%;
+}
+
+
+
+
+/* @media (max-width: 640px) {
+
+    .section-1 {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .promo-section-1,.promo-section-2 {
+    padding: 5%;
+    margin-top: 5vw;
+    }
+    .smoothie-block {
+        height: clamp(200px,80vw,600px);
+        width: 95%;
+        margin: auto;
+        border-radius: 50px;
+        margin-top: 40%;
+    }
+    .smoothie-text-1,.smoothie-text-2 {
+        transform: rotate(0deg);
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        z-index: -10;
+        font-size: 80px;
+        line-height: 0.9;
+        margin-top: 6%;
+    }
+    .highlight {
+        font-size: 70px;
+    }
+    .smoothie-text {
+        margin: auto;
+        margin-top: -50%;
+    }
+    .smoothie {
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100%;
+
+    }
+    .most-line {
+        gap: 20px;
+    }
+    .logo,.ingredients
+    ,.strawberry1
+    ,.strawberry2
+    ,.strawberry3
+    ,.strawberry4
+    ,.strawberry5
+    ,.strawberry6
+    ,.mint
+    ,.promo-subtitle
+    ,.promo-price {
+        display: none;
+    }
+    .menu-button {
+        position: absolute;
+        bottom: 30%;
+        right: 25%;
+        z-index: 1;
+    }
+    .most-line {
+        width: 100%;
+    }
+} */
 

@@ -19,6 +19,20 @@
         <button onclick="scrollToSection('menu')" class="navigation-button">Меню</button>
         <button onclick="scrollToSection('about')" class="navigation-button">О нас</button>
     </nav>
+
+    <main class="mobile-section-1">
+        <p class="mob-disc-1"><span style="color: white;">ХИТ ЛЕТА</span> ВО ВСЕМ <br> МИРЕ</p>
+        <p class="mob-dic2">ПОРТУГАЛЬСКИЙ</p>
+        <p class="mob-back-text1">СМУЗИ</p>
+        <p class="mob-back-text2">СМУЗИ</p>
+        <p class="mob-back-text3">СМУЗИ</p>
+        <div class="mob-buttons-container">
+            <img class="mob-img" src="./img/smoothie.png" alt="">
+            <button onclick="scrollToSection('menu')" class="mob-button">перейти в меню</button>
+        </div>
+        
+    </main>
+
     <section id="home" class="section-1">
         <div class="promo-section-1">
             <div>
@@ -29,7 +43,7 @@
                 ВИШНИ И КЛУБНИКИ, ЕЖИВИКИ И СЛАДКОГО <br> БАНАНА</p>    
                 </div>
                 <p class="promo-price fade-in">Лучшая цена <span class="promo-amount">450 ₽</span></p>
-                <button class="menu-button fade-in">СМОТРЕТЬ МЕНЮ</button>
+                <button onclick="scrollToSection('menu')" class="menu-button fade-in">СМОТРЕТЬ МЕНЮ</button>
             </div>
             <div class="smoothie-block">
                     <img class="strawberry1" src="./img/strawberry.png" alt="">
@@ -47,17 +61,18 @@
             </div>
     </section>
 
-    <section id="menu" class="section-2 scroll-animate">
+    <section id="menu" class="section-2">
         <div class="menu-buttons">
-            <button class="menu_button b1">НАПИТКИ</button>
-            <button class="menu_button b2">ДЕСЕРТЫ</button>
-            <button class="menu_button b3">ВЫПЕЧКА</button>
-            <button class="menu_button b4">ТОСТЫ</button>
+            <button id="drinks_button" class="menu_button b1">НАПИТКИ</button>
+            <button id="desserts_button" class="menu_button b2">ДЕСЕРТЫ</button>
+            <button id="bakery_button" class="menu_button b3">ВЫПЕЧКА</button>
+            <button id="toasts_button" class="menu_button b4">ШОКОЛАД</button>
         </div>
         
-        <div class="drinks">
+        <!-- Раздел с напитками -->
+        <div id="drinks" class="drinks">
 
-            <div class="drinks-item">
+            <div class="menu-item">
                 <img class="drinks-image" src="./img/double-hawaiian.png" alt="">
                 <p class="drinks-name"> ДВОЙНОЙ<br>ГАВАЙСКИЙ </p>
                 <div class="drinks-ingredients">
@@ -74,7 +89,7 @@
                 </div>
             </div>
 
-            <div class="drinks-item">
+            <div class="menu-item">
                 <img class="drinks-image" src="./img/iced-latte.png" alt="">
                 <p class="drinks-name">АЙС-ЛАТТЕ</p>
                 <div class="drinks-ingredients">
@@ -91,7 +106,7 @@
                 </div>
             </div>
 
-            <div class="drinks-item">
+            <div class="menu-item">
                 <img class="drinks-image" src="./img/Matcha Latte.png" alt="">
                 <p class="drinks-name"> МАТЧА ЛАТТЕ</p>
                 <div class="drinks-ingredients">
@@ -108,7 +123,7 @@
                 </div>
             </div>
 
-            <div class="drinks-item">
+            <div class="menu-item">
                 <img class="drinks-image" src="./img/Flat white.png" alt="">
                 <p class="drinks-name"> ФЛЭТ-УАЙТ </p>
                 <div class="drinks-ingredients">
@@ -125,14 +140,231 @@
                 </div>
             </div>
 
-        </div>
-        <div class="desserts">
 
         </div>
-        <div class="bakery">
+
+
+        <!-- Раздел с десертами -->
+        <div id="desserts" class="desserts">
+            
+            <div class="menu-item">
+                <img class="drinks-image" src="./img/macaron.png" alt="">
+                <p class="drinks-name"> МАКАРОН</p>
+                <div class="drinks-ingredients">
+                    <div class="drinks-description-1">
+                        <p>КАЛОРИЙНОСТЬ</p> <p class="desc-other">115ккал</p>
+                    </div>
+                    <div class="drinks-description-2">
+                        <p>ВЕС</p> <p class="desc-other">55g</p>
+                    </div>
+                    <div class="drinks-description-3">
+                        <p>ЦЕНА</p> <p class="desc-other">120 ₽</p>
+                    </div>
+                    <button class="drinks-button">ДОБАВИТЬ</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img class="drinks-image" src="./img/mochi.png" alt="">
+                <p class="drinks-name">МОТИ</p>
+                <div class="drinks-ingredients">
+                    <div class="drinks-description-1">
+                        <p>КАЛОРИЙНОСТЬ</p> <p class="desc-other">100ккал</p>
+                    </div>
+                    <div class="drinks-description-2">
+                        <p>ВЕС</p> <p class="desc-other">75g</p>
+                    </div>
+                    <div class="drinks-description-3">
+                        <p>ЦЕНА</p> <p class="desc-other">220 ₽</p>
+                    </div>
+                    <button class="drinks-button">ДОБАВИТЬ</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img class="drinks-image" src="./img/tiramisu.png" alt="">
+                <p class="drinks-name">ТИРАМИСУ</p>
+                <div class="drinks-ingredients">
+                    <div class="drinks-description-1">
+                        <p>КАЛОРИЙНОСТЬ</p> <p class="desc-other">485ккал</p>
+                    </div>
+                    <div class="drinks-description-2">
+                        <p>ВЕС</p> <p class="desc-other">320g</p>
+                    </div>
+                    <div class="drinks-description-3">
+                        <p>ЦЕНА</p> <p class="desc-other">450 ₽</p>
+                    </div>
+                    <button class="drinks-button">ДОБАВИТЬ</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img class="drinks-image" src="./img/cheesecake.png" alt="">
+                <p class="drinks-name">ЧИЗКЕЙК</p>
+                <div class="drinks-ingredients">
+                    <div class="drinks-description-1">
+                        <p>КАЛОРИЙНОСТЬ</p> <p class="desc-other">315ккал</p>
+                    </div>
+                    <div class="drinks-description-2">
+                        <p>ВЕС</p> <p class="desc-other">215g</p>
+                    </div>
+                    <div class="drinks-description-3">
+                        <p>ЦЕНА</p> <p class="desc-other">350 ₽</p>
+                    </div>
+                    <button class="drinks-button">ДОБАВИТЬ</button>
+                </div>
+            </div>
+
 
         </div>
-        <div class="Toasts">
+
+
+        <!-- Раздел с выпечкой -->
+        <div id="bakery" class="bakery">
+            
+            <div class="menu-item">
+                <img class="drinks-image" src="./img/churros.png" alt="">
+                <p class="drinks-name">ЧУРРОС</p>
+                <div class="drinks-ingredients">
+                    <div class="drinks-description-1">
+                        <p>КАЛОРИЙНОСТЬ</p> <p class="desc-other">90ккал</p>
+                    </div>
+                    <div class="drinks-description-2">
+                        <p>ВЕС</p> <p class="desc-other">75g</p>
+                    </div>
+                    <div class="drinks-description-3">
+                        <p>ЦЕНА</p> <p class="desc-other">340 ₽</p>
+                    </div>
+                    <button class="drinks-button">ДОБАВИТЬ</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img class="drinks-image" src="./img/cinnamon.png" alt="">
+                <p class="drinks-name">БУЛОЧКА C <br>КОРИЦЕЙ</p>
+                <div class="drinks-ingredients">
+                    <div class="drinks-description-1">
+                        <p>КАЛОРИЙНОСТЬ</p> <p class="desc-other">235ккал</p>
+                    </div>
+                    <div class="drinks-description-2">
+                        <p>ВЕС</p> <p class="desc-other">125g</p>
+                    </div>
+                    <div class="drinks-description-3">
+                        <p>ЦЕНА</p> <p class="desc-other">125 ₽</p>
+                    </div>
+                    <button class="drinks-button">ДОБАВИТЬ</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img class="drinks-image" src="./img/syrniki.png" alt="">
+                <p class="drinks-name">СЫРНИКИ</p>
+                <div class="drinks-ingredients">
+                    <div class="drinks-description-1">
+                        <p>КАЛОРИЙНОСТЬ</p> <p class="desc-other">95ккал</p>
+                    </div>
+                    <div class="drinks-description-2">
+                        <p>ВЕС</p> <p class="desc-other">90g</p>
+                    </div>
+                    <div class="drinks-description-3">
+                        <p>ЦЕНА</p> <p class="desc-other">150 ₽</p>
+                    </div>
+                    <button class="drinks-button">ДОБАВИТЬ</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img class="drinks-image" src="./img/croissant.png" alt="">
+                <p class="drinks-name">КРУАСАН</p>
+                <div class="drinks-ingredients">
+                    <div class="drinks-description-1">
+                        <p>КАЛОРИЙНОСТЬ</p> <p class="desc-other">85ккал</p>
+                    </div>
+                    <div class="drinks-description-2">
+                        <p>ВЕС</p> <p class="desc-other">70g</p>
+                    </div>
+                    <div class="drinks-description-3">
+                        <p>ЦЕНА</p> <p class="desc-other">110 ₽</p>
+                    </div>
+                    <button class="drinks-button">ДОБАВИТЬ</button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- Раздел с тостами -->
+        <div id="toasts" class="toasts">
+            
+            <div class="menu-item">
+                <img class="drinks-image" src="./img/chocolate with nuts.png" alt="">
+                <p class="drinks-name"> ШОКОЛАД С<br>ОРЕШКАМИ</p>
+                <div class="drinks-ingredients">
+                    <div class="drinks-description-1">
+                        <p>КАЛОРИЙНОСТЬ</p> <p class="desc-other">225ккал</p>
+                    </div>
+                    <div class="drinks-description-2">
+                        <p>ВЕС</p> <p class="desc-other">145g</p>
+                    </div>
+                    <div class="drinks-description-3">
+                        <p>ЦЕНА</p> <p class="desc-other">370 ₽</p>
+                    </div>
+                    <button class="drinks-button">ДОБАВИТЬ</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img class="drinks-image" src="./img/Dubai chocolate.png" alt="">
+                <p class="drinks-name">ДУБАЙСКИЙ <br> ШОКОЛАД</p>
+                <div class="drinks-ingredients">
+                    <div class="drinks-description-1">
+                        <p>КАЛОРИЙНОСТЬ</p> <p class="desc-other">315ккал</p>
+                    </div>
+                    <div class="drinks-description-2">
+                        <p>ВЕС</p> <p class="desc-other">185g</p>
+                    </div>
+                    <div class="drinks-description-3">
+                        <p>ЦЕНА</p> <p class="desc-other">720 ₽</p>
+                    </div>
+                    <button class="drinks-button">ДОБАВИТЬ</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img class="drinks-image" src="./img/white chocolate.png" alt="">
+                <p class="drinks-name"> БЕЛЫЙ <br> ШОКОЛАД </p>
+                <div class="drinks-ingredients">
+                    <div class="drinks-description-1">
+                        <p>КАЛОРИЙНОСТЬ</p> <p class="desc-other">205ккал</p>
+                    </div>
+                    <div class="drinks-description-2">
+                        <p>ВЕС</p> <p class="desc-other">135g</p>
+                    </div>
+                    <div class="drinks-description-3">
+                        <p>ЦЕНА</p> <p class="desc-other">250 ₽</p>
+                    </div>
+                    <button class="drinks-button">ДОБАВИТЬ</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img class="drinks-image" src="./img/dark chocolate.png" alt="">
+                <p class="drinks-name">ЧЕРНЫЙ <br> ШОКОЛАД </p>
+                <div class="drinks-ingredients">
+                    <div class="drinks-description-1">
+                        <p>КАЛОРИЙНОСТЬ</p> <p class="desc-other">185ккал</p>
+                    </div>
+                    <div class="drinks-description-2">
+                        <p>ВЕС</p> <p class="desc-other">120g</p>
+                    </div>
+                    <div class="drinks-description-3">
+                        <p>ЦЕНА</p> <p class="desc-other">210 ₽</p>
+                    </div>
+                    <button class="drinks-button">ДОБАВИТЬ</button>
+                </div>
+            </div>
+
 
         </div>
     </section>
@@ -243,8 +475,8 @@
 
         </div>
     </section>
-    <script>
-
+    <script src="./js/script.js"></script>
+    <script>        
     const elements = document.querySelectorAll('.scroll-animate');
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {

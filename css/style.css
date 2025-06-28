@@ -4,6 +4,9 @@
     width: 25%;
     margin-left: 5%;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /* Левая часть первого блока (Текст "Хит лета...") */
 .promo-section-1 {
@@ -239,7 +242,43 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-.drinks-item {
+.desserts {
+    margin-top: clamp(150px,20vw,300px);
+    display: flex;
+    gap: 3rem;
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.bakery {
+    margin-top: clamp(150px,20vw,300px);
+    display: flex;
+    gap: 3rem;
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.toasts {
+    margin-top: clamp(150px,20vw,300px);
+    display: flex;
+    gap: 3rem;
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#drinks {
+    display: none;
+}
+#desserts {
+    display: none;
+}
+#bakery {
+    display: none;
+}
+#toasts {
+    display: none;
+}
+.menu-item {
     background-color: #ffffff;
     background-image:
     linear-gradient(to bottom, rgba(255, 255, 255, 0.246) -50%, #d4d4d4 100%),
@@ -300,7 +339,7 @@
 }
 
 .drinks-button:hover ~ .drinks-item,
-.drinks-item:hover {
+.menu-item:hover {
     transform: scale(1.1);
     background-image:
     linear-gradient(to bottom, rgba(255, 255, 255, 0.246) -50%, #027447 100%),
@@ -334,6 +373,7 @@
     text-align: center;
     padding: 5%;
     position: relative;
+    margin-top: 8vw;
 }
 .most-container {
 
@@ -622,17 +662,16 @@
     filter: brightness(0) invert(1);
     left: 20%;
     transform: rotate(200deg);
-    top: 13%;
+    top: 8%;
 }
 .footer-bean1{
     width: 15%;
-    top: 25%;
+    top: 10vw;
     right: 2%;
     position: absolute;
     z-index: 10;
     filter: drop-shadow(15px 15px 15px rgb(0, 0, 0));
     transform: rotate(120deg);
-    filter: blur(3px);
 }
 .footer-bean2{
     width: 12%;
@@ -663,27 +702,3 @@
 }
 
 
-.scroll-to-top {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    background-color: #027447; /* твой зелёный */
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.4s ease, transform 0.3s ease;
-    z-index: 999;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.scroll-to-top.show {
-    opacity: 1;
-    pointer-events: auto;
-    transform: scale(1.05);
-}
