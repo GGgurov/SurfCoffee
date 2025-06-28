@@ -49,9 +49,20 @@ body::-webkit-scrollbar {
     color: #fff;
 }
 
+.section-1,
+.mobile-section-1 {
+    display: none;
+}
+@media (min-width: 642px) {
+    .section-1 {
+        display: flex !important;
+    }
+    .mobile-section-1 {
+        display: none !important;
+    }
+}
 
-
-@media (max-width: 640px) { 
+@media (max-width: 641px) { 
     .section-1 {
         display: none;
     }
@@ -62,9 +73,170 @@ body::-webkit-scrollbar {
         display: none;
     }
     .menu_button {
-        width: clamp(90px,20vw,450px);
+        width: clamp(80px,20vw,450px);
+    }
+    .section-3 {
+        margin-top: 20%;
+    }
+    .menu-buttons {
+        margin-top: 10%;
+        width: 98%;
+    }
+    .b1 {
+        left: 4%;
+        z-index: 4;
+    }
+    .b2 {
+        left: 27%;
+        z-index: 3;
+    }
+    .b3 {
+        left: 50%;
+        z-index: 2;
+    }
+    .b4 {
+        z-index: 1;
+        left: 73%;
     }
 
+    .section-3 {
+        margin-top: 15vw;
+    }
+    .most-desc-1 {
+        position: absolute;
+        width: 45vw;
+        font-size: 2.5vw;
+        left: 5%;
+        top: 100%;
+    }
+    .arrow1 {
+        display: none;
+    }
+    .arrow2 {
+        width: 20%;
+        right: 10%;
+        bottom: 34%;
+        transform: rotate(-10deg);
+    }
+    .most-desc-2 {
+        position: absolute;
+        width: 45vw;
+        font-size: 2.5vw;
+        right: 5%;
+        top: 97%;
+    }
+    .most-line {
+        font-size: 5vw;
+        height: 15%;
+        bottom: 10%;
+        transform: rotate(0);
+        min-width: 100vw;
+    }
+    .most-text-2 {
+        font-size: 15vw;
+    }
+    .most-text-1 {
+        font-size: 3vw;
+    }
+    .most-image {
+        width: 65vw;
+    }
+    #surftx1,#surftx2,#surftx3,#surftx4,#surftx5 {
+        display: none;
+    }
+    .section-4 {
+        margin-top: 45%;
+        position: relative;
+        overflow: hidden;
+    }
+    .spots-h1 {
+        margin-top: 20%;
+        font-size: 15vw;
+        -webkit-text-stroke: 1px white;
+    }
+    .coffee_bean1 {
+        width: 25%;
+        left: 10%;
+        bottom: 25%;
+    }
+    .coffee_bean {
+        right: 10%;
+        top: 10%;
+    }
+    .spots-image-container {
+        border-radius: 8px;
+        max-width: 100%;
+        margin-bottom: 5%;
+        padding: 5%;
+    }
+    .spots-image {
+        border-radius: 10px;
+    }
+    .spots-container {
+        width: 70%;
+    }
+    .spots {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 30%;
+    }
+    .spots-description {
+        font-size: 15px;
+    }
+    .spots-h2 {
+        font-size: 7vw;
+    }
+    .spots-mountain {
+        width: 200%;
+        overflow: hidden;
+    }
+    .section-5 {
+        margin-top: 30%;
+        position: relative;
+    }
+    .footer-logo {
+        width: 20%;
+    }
+    .footer-text {
+        font-size: 20px;
+    }
+    .footer-button {
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+    .footer {
+        margin-top: 35%;
+    }
+    .signature {
+        left: 5vw;
+        top: -2%;
+        text-align: center;
+        filter: drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.491));
+    }
+    .footer-arrow {
+        top: -10%;
+        z-index: 10;
+        left: 30%;
+        width: 20%;
+    }
+    .footer-bean1 {
+        top: 0%;
+        right: 5%;
+        width: 25%;
+    }
+    .footer-bean2 {
+        top: 30%;
+        width: 10%;
+        left: 10%;
+    }
+    .surf-board {
+        bottom: 45vw;
+        width: 80vw;
+        right: 0;
+    }
 }
 /* Блок который открывается только на телефоне */
 .mobile-section-1 {
@@ -76,7 +248,7 @@ body::-webkit-scrollbar {
 .mob-disc-1 {
     color: rgb(166, 166, 166);
     font-size: 5vw;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 .mob-dic2 {
     color: #027447;
@@ -86,9 +258,9 @@ body::-webkit-scrollbar {
 }
 .mob-img {
     position: absolute;
-    bottom: 65%;
+    bottom: 50%;
     filter: drop-shadow(15px 15px 20px rgba(0, 0, 0, 0.779));
-
+    width: 80vw;
 }
 .mob-buttons-container {
     position: relative;
@@ -96,7 +268,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     background-color: #027447;
-    height: 15rem;
+    height: 50vw;
     border-radius: 30px;
     margin: auto;
     width: 95%;
@@ -128,6 +300,8 @@ body::-webkit-scrollbar {
     height: 13vw;
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.581));
     transition: 0.3s;
+    font-size: 4vw;
+    margin-top: 20%;
 }
 .mob-button:hover {
     transform: scale(1.05);

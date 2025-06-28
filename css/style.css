@@ -417,7 +417,8 @@ html {
 .most-line {
     background: radial-gradient(circle, rgb(154, 231, 163)  0%, rgb(69, 141, 77) 100%);
     position: absolute;
-    width: 110%;
+    display: flex;
+    min-width: 110vw;
     transform: rotate(-5deg);
     bottom: 16%;
     height: 10%;
